@@ -1,6 +1,6 @@
 package fysik;
 
-public class pysics {
+public class physics {
 
 		static double G = 9.82;
 		static double ATM = 101.3E3; // 101.3 kPa
@@ -18,6 +18,9 @@ public class pysics {
 	
 	}
 	
+	public static double kelvinToCelsius(double kelvin) {
+		return kelvin - 273.15;
+}
 	
 	
 	
