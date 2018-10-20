@@ -20,9 +20,43 @@ public class physics {
 	
 	public static double kelvinToCelsius(double kelvin) {
 		return kelvin - 273.15;
+	}
+	
+	
+	/**
+	 * 
+	 * räknar ut trycker på viss en vätska vid ett viss djup
+	 * 
+	 * @param fluid = vilken vädska det är
+	 * @param depth = i vilket djup tricket mäts (i meter)
+	 * @return
+	 */
+	
+	
+	public static double fluidPressure(FluidTable fluid, double depth) {
+		
+		return fluid.density * G * depth;
+		
+	}
+	
+	
+	
+	
+	public static double pressureUnderWater(double depth) {
+		
+		
+		return FluidTable.H2O.density * G * depth;
+   
+		
+	}
+	
+	
+	public static double kineticEnergy(double mass, double velocity) {
+		
+		
+		return (mass * velocity, 2)) / 2;
 }
 	
 	
-	
-	
+
 }
