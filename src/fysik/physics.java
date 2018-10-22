@@ -57,8 +57,24 @@ public class physics {
 		return (mass * (velocity * velocity) ) / 2;
 }
 	
+	public static double potentialEnergy(double mass, double height) {
+		
+		return mass * G * height;
+		
+	}
+	
+	public static double fallSpeed(double height) {
+		
+		return height / (G * G);
+		
+	}
 	
 	
+	public static double delta(double first, double last) {
+		
+		
+		return last - first;
+	}
 	
 
 }
