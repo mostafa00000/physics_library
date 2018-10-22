@@ -75,6 +75,60 @@ public class physics {
 		
 		return last - first;
 	}
+
+	
+	public static double volumeToMass(FluidTable fluid, double volume) {
+		return fluid.density * volume;
+	}
+	
+	
+	
+	public static double volumeToMass(GasTable gas, double volume) {
+		return gas.density * volume;
+	
+	}
+	
+	
+	
+	public static double volumeToMass(SolidTable solid, double volume) {
+		return solid.density * volume;
+	
+	
+	}
+	
+	public static double svtVelocity(double distance, double time) {
+		return distance / time;
+	
+	
+	}
+	
+	public static double svtDistance(double velocity, double time) {
+		return velocity * time;
+	
+	}
+	
+	public static double svtTime(double distance, double velocity) {
+		return distance / velocity;
+	
+	
+	}
+	
+	
+	
+	public static double work(double mass, double acceleration) {
+		return mass * acceleration;
+	
+	
+	}
+	
+	
+	
+	public static double power(double work, double time) {
+		return work / time;
+	}
+	
+	
+	
 	
 
 }

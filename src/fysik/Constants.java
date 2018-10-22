@@ -12,8 +12,9 @@ public enum Constants {
 
 	Constants(double val) {
 		this.value = val;
+	
 	}
-
+	
 }
 
 //för att få en value måste jag skriva "constants.g.value"
