@@ -130,5 +130,22 @@ public class physics {
 	
 	
 	
-
+	
+	
+	
+	
+	public static double velocityToHeight(double velocity) {
+	
+		
+		return velocity * velocity / (2 * G);
+	}
+	
+	
+	
+	public static double kilogramsToNewton(double kg) {
+	
+		
+		return kg * G;
+}
+	
 }
