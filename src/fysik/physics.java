@@ -130,10 +130,6 @@ public class physics {
 	
 	
 	
-	
-	
-	
-	
 	public static double velocityToHeight(double velocity) {
 	
 		
@@ -147,5 +143,56 @@ public class physics {
 		
 		return kg * G;
 }
+	
+	
+	public static double heat(SolidTable solid, double mass, double deltaT) {
+		
+		
+		
+		return solid.heatCapacity * mass * (Math.abs(deltaT));
+	}
+	
+	
+	
+	public static double heat(FluidTable fluid, double volume, double deltaT) {
+	
+		
+		return fluid.heatCapacity * volume * fluid.density * (Math.abs(deltaT));
+	}
+	
+	
+	
+	public static double heat(GasTable gas, double volume, double deltaT) {
+	
+		
+		return gas.heatCapacity * volume * gas.density * (Math.abs(deltaT));
+	}
+
+	
+	
+	public static double heatEnergy(FluidTable fluid, double mass, double startT, double endT) {
+		
+		
+		
+		return fluid.heatCapacity * mass * (Math.abs(startT - endT));
+	
+	
+	}
+
+
+	
+	public static double heatEnergy(GasTable gas, double mass, double startT, double endT) {
+		
+		return gas.heatCapacity * mass * (Math.abs(startT - endT));
+		
+	}
+
+	public static double heatEnergy(SolidTable solid, double mass, double startT, double endT) {
+		
+		return solid.heatCapacity * mass * (Math.abs(startT - endT));
+		
+}
+
+	
 	
 }
