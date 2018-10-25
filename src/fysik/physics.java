@@ -65,7 +65,7 @@ public class physics {
 	
 	public static double fallSpeed(double height) {
 		
-		return height / (G * G);
+		return Math.sqrt(2*G*height);
 		
 	}
 	
@@ -137,12 +137,7 @@ public class physics {
 	}
 	
 	
-	
-	public static double kilogramsToNewton(double kg) {
-	
-		
-		return kg * G;
-}
+
 	
 	
 	public static double heat(SolidTable solid, double mass, double deltaT) {
@@ -170,29 +165,10 @@ public class physics {
 
 	
 	
-	public static double heatEnergy(FluidTable fluid, double mass, double startT, double endT) {
-		
-		
-		
-		return fluid.heatCapacity * mass * (Math.abs(startT - endT));
-	
-	
-	}
 
-
-	
-	public static double heatEnergy(GasTable gas, double mass, double startT, double endT) {
-		
-		return gas.heatCapacity * mass * (Math.abs(startT - endT));
-		
-	}
-
-	public static double heatEnergy(SolidTable solid, double mass, double startT, double endT) {
-		
-		return solid.heatCapacity * mass * (Math.abs(startT - endT));
 		
 }
 
 	
 	
-}
+
