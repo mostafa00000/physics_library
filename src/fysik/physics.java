@@ -350,11 +350,62 @@ public class physics {
 		
 		return FluidTable.H2SO4.density * G * depth; 
 	
-}
+	}
 
 	
+	
+	public static double RorelseMangd(double mass, double velocity) {
 
+		return mass * velocity;
+		
+	}
+	
+
+	public static double TyngdKraft(double mass) {
+		
+		return mass*G;
+	}
+
+	
+	
+	
+	public static double friction(double GF, double N) {
+		
+		return GF*N;
+	}
+	
+	
+	
+	
+	public static double Smaltning(double Cs, double mass, double deltaT) {
+		
+		return Cs*mass*deltaT;
+	}
+	
+	public static double densitet(double mass, double volume) {
+		
+		
+		
+		return mass / volume;
+	}
+	
+	
+	public static double fjaderKRAFT(double k, double x) {
+		
+		return k * x;
+		
+	}
+
+	public static double tryck(double F, double A) {
+		
+		
+		return F/A;
+		
+	}
+	
 }
+
+
 
 
 	
