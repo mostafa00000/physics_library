@@ -352,7 +352,15 @@ public class physics {
 	
 	}
 
-	
+
+	/**
+	 * 
+	 * rörelsemängd
+	 * 
+	 * @param mass
+	 * @param velocity
+	 * @return
+	 */
 	
 	public static double RorelseMangd(double mass, double velocity) {
 
@@ -367,7 +375,14 @@ public class physics {
 	}
 
 	
-	
+	/**
+	 * 
+	 * RÄKNAR UT FRICTION
+	 * 
+	 * @param GF = glidfriktionstalet
+	 * @param N = normalkraften
+	 * @return
+	 */
 	
 	public static double friction(double GF, double N) {
 		
@@ -375,7 +390,15 @@ public class physics {
 	}
 	
 	
-	
+	/**
+	 * 
+	 * smältning 
+	 * 
+	 * @param Cs = specifik smätentalpi
+	 * @param mass 
+	 * @param deltaT = ändring på denmratur
+	 * @return
+	 */
 	
 	public static double Smaltning(double Cs, double mass, double deltaT) {
 		
@@ -390,7 +413,16 @@ public class physics {
 	}
 	
 	
-	public static double fjaderKRAFT(double k, double x) {
+	/**
+	 * 
+	 * fjäderkraft
+	 * 
+	 * @param k = fjäderkonstanten
+	 * @param x = fjäderns förlängning
+	 * @return
+	 */
+	
+	public static double fjaderKraft(double k, double x) {
 		
 		return k * x;
 		
