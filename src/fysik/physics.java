@@ -83,7 +83,7 @@ public class physics {
 	public static double kineticEnergy(double mass, double velocity) {
 		
 		
-		return (mass * (velocity * velocity) ) / 2;
+		return (mass * (velocity * velocity)  / 2;
 }
 	
 	

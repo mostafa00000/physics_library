@@ -17,7 +17,7 @@ public static void main(String[] args) {
 	
 	//uppgift 3
 	
-	//System.out.println();
+	//System.out.println(FluidTable.H2O.heatCapacity * 5 * 1); /??????
 
 	//uppgift 4
 	
@@ -25,10 +25,22 @@ public static void main(String[] args) {
 	
 	//upgift 5
 	
-	//System.out.println(FluidTable.H2O.heatCapacity * 5 * 1); //?????
+	//System.out.println(); 
+	 
+	//uppgift 8: Determine the kinetic energy of a 625-kg roller coaster car that is moving with a speed of 18.3 m/s
 	
+	//System.out.println(physics.kineticEnergy(625, 18.3));
 
+	//uppgift 9:  A cart is loaded with a brick and pulled at constant speed along an inclined plane to the height of a seat-top. 
+	//If the mass of the loaded cart is 3.0 kg and the height of the seat top is 0.45 meters, then what is the potential energy of the loaded cart at the height of the seat-top?
 
+	//System.out.println(physics.potentialEnergy(3, 0.45)+ "jules");
+	
+	//uppgift 10: A tired squirrel (mass of approximately 1 kg) does push-ups by applying a force to elevate its center-of-mass by 5 cm in order to do a mere 0.50 Joule of work. 
+	//If the tired squirrel does all this work in 2 seconds, then determine its power.
+
+	//System.out.println(physics.power(0.5, 2.0) + "watts");
+	
 }
 
 }
