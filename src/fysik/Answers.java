@@ -25,8 +25,24 @@ public static void main(String[] args) {
 	
 	//upgift 5
 	
-	//System.out.println(); 
-	 
+	//System.out.println(physics.velocityToHeight(50/3.6) + 1.80);
+	
+	//uppgift 6
+	
+	//System.out.println(physics.power(physics.work(740, 100), 4.4));
+	
+	//uppgift 7
+
+		int studs = 0;  
+	    for (double i = 10; i > 0.5;) {
+	    	
+	    	i = physics.velocityToHeight(physics.fallSpeed(i) - i/100);
+	    	studs++;
+	    	
+	    }
+	
+	    System.out.println(studs);
+	    
 	//uppgift 8: Determine the kinetic energy of a 625-kg roller coaster car that is moving with a speed of 18.3 m/s
 	
 	//System.out.println(physics.kineticEnergy(625, 18.3));
